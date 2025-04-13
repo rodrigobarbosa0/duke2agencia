@@ -172,6 +172,14 @@ nav a:hover {
   transform: scale(1.05);
 }
 
+#contato {
+  
+}
+
+.whatsapp, .instagram, .email {
+    max-width: 10%;
+}
+
 footer {
   text-align: center;
   padding: 20px;
