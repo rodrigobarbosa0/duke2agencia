@@ -52,7 +52,7 @@ nav a:hover {
 #hero {
   text-align: center;
   padding: 100px 20px;
-  background: linear-gradient(135deg, #7209b7, #3a0ca3);
+  background: linear-gradient(135deg, #000000, #310599);
 }
 
 #hero h1 {
@@ -115,6 +115,8 @@ nav a:hover {
 .portfolio-item img {
   width: 100%;
   border-radius: 12px;
+  max-width: 300px;
+  max-height: 500%;
 }
 
 .stats {
@@ -173,15 +175,19 @@ nav a:hover {
 }
 
 #contato {
-  
+ align-items: center;
 }
 
-.container-contato {
-  align-items: center;
+.contato {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
 }
 
-.whatsapp, .instagram, .email {
-    max-width: 100px;
+.whatsapp, .instagram, .email, img{
+  max-width: 80px;
+  max-height: 300%;
 }
 
 footer {
