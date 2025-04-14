@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
 /* Reset básico */
 * {
   margin: 0;
@@ -20,12 +22,14 @@ body {
 }
 
 header {
-  background: #000000;
+  background: linear-gradient(135deg, #ffffff, #1e1e1e);
   padding: 1px 10px;
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-bottom: #fff solid 1px;
 }
+
 /*menu*/
 nav ul {
   display: flex;
@@ -33,26 +37,18 @@ nav ul {
   list-style: none;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
-}
 
-nav a:hover {
-  color: #00f5d4;
-}
 
 .nav-bar {
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 6rem;
+  padding: 0rem 6rem;
+  
 }
 
 .logo img{
-  max-width: 200px;
-  max-height: 400%;
+  max-width: 150px;
+  max-height: 300%;
 }
 
 .nav-list {
@@ -90,7 +86,7 @@ nav a:hover {
   display: flex;
   text-align: center;
   padding: 40px 20px;
-  background: linear-gradient(135deg, #b94d04, #30039b);
+  background: #1e1e1e;
   flex-direction: column;
   margin: 0 auto;
   gap: 10px;
@@ -108,6 +104,7 @@ nav a:hover {
 .btn {
   background: #00f5d4;
   padding: 12px 30px;
+  margin: 0 auto;
   color: #000;
   text-decoration: none;
   font-weight: bold;
@@ -122,7 +119,7 @@ nav a:hover {
 }
 
 .section {
-  padding: 80px 0;
+  padding: 40px 0;
   background: #1e1e1e;
   border: none;
 }
@@ -187,14 +184,111 @@ nav a:hover {
   display: block;
 }
 
-#quiz-container {
+/*button*/
+#quiz {
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.4;
+  --darkGray: #333;
+  --litRed: rgb(2, 25, 158);
+  --glowRed: rgb(37, 38, 143);
+  background-color: var(--darkGray);
+  color: #fff;
+}
+
+#quiz-container-master {
   background: #292929;
-  padding: 40px;
+  padding: 20px;
   border-radius: 20px;
   color: #fff;
   text-align: center;
   max-width: 600px;
-  margin: auto;
+  margin: 0 auto;
+  font-size: 30px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+}
+
+.quiz-container span {
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto,
+  Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 1;
+  color: #000;
+}
+
+.quiz-container button {
+  font: inherit;
+  color: currentColor;
+  background-color: #00f5d4;
+  border: .1em solid var(--darkGray);
+/*   border: .2em solid transparent; */
+  border-radius: .5em;
+  transition: all .25s ease-in;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(90deg, var(--glowRed) 0, transparent 1em, transparent 100%),
+    linear-gradient(0deg, var(--glowRed) 0, transparent 1em, transparent 100%),
+    linear-gradient(270deg, var(--glowRed) 0, transparent 1em, transparent 100%),
+    linear-gradient(180deg, var(--glowRed) 0, transparent 1em, transparent 100%);
+  background-position: -1em 0, 0 1em, 1em 0, 0 -1em;
+  width: 100%;
+  font-size: 150%;
+  white-space: nowrap;
+  padding: 10px 10px;
+  display: flex;
+  align-content: center;
+
+  cursor: pointer;
+}
+
+.quiz-container button:focus, .quiz-container button:hover {
+  border: .2em solid var(--litRed);
+  box-shadow: 0 0 1.2em var(--litRed), inset 0 0 1.2em var(--litRed);
+  outline: none;
+}
+
+.quiz-container button:focus + button, .quiz-container button:hover  + button {
+  border-bottom-color: var(--darkGray);
+  background-position: -1em 0, 0 1em, 1em 0, 0 0;
+}
+
+.quiz-container button:has(+ button:focus), .quiz-container button:has(+ button:hover) {
+  border-top-color: var(--darkGray);
+  background-position: -1em 0, 0 0, 1em 0, 0 -1em;
+}
+
+@media (min-width:36em) {
+  #quiz-container-master {
+    
+  }
+
+  .quiz-container button:focus + button, .quiz-container button:hover + button {
+    border-right-color: var(--darkGray);
+    background-position: 0 0, 0 1em, 1em 0, 0 -1em;
+  }
+
+  .quiz-container button:has(+ button:focus), .quiz-container button:has(+ button:hover) {
+    border-left-color: var(--darkGray);
+    background-position: -1em 0, 0 1em, 0 0, 0 -1em;
+  }
+}
+
+/*end button*/
+
+#resultadoQuiz {
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
 }
 
 #form-contato input,
@@ -274,7 +368,7 @@ footer {
     max-height: 120%;
   }
   .nav-bar {
-    padding: 1.5rem;
+    padding: .5rem;
   }
   .nav-item {
       display: none;
@@ -314,6 +408,10 @@ footer {
     margin: 20px 0px;
     color: #fff;
   }
+  .btn {
+    width: 80%;
+  }
+
   .section h2 {
     font-size: 2rem;
   }
@@ -323,4 +421,14 @@ footer {
     flex-direction: column;
     gap: 30px;
   }
+
+  /*button*/
+  .quiz-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  /*end button*/
+
 }

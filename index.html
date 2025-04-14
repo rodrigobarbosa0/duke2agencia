@@ -134,15 +134,26 @@
 
     <!-- Quiz interativo -->
     <section class="section" id="quiz">
+      <!--body-->
       <h2>Descubra o que sua empresa precisa agora</h2>
-      <div id="quiz-container">
-        <p><strong>O que sua marca mais precisa?</strong></p>
-        <button onclick="respostaQuiz('Alcance')">Mais alcance</button>
-        <button onclick="respostaQuiz('Conversão')">Mais conversões</button>
-        <button onclick="respostaQuiz('Reconhecimento')">
-          Fortalecer a marca
-        </button>
-        <p id="resultadoQuiz"></p>
+      <div id="quiz-container-master">
+        <!--div-->
+        <p>
+          <i><strong>O que sua marca mais precisa?</strong></i>
+        </p>
+        <div class="quiz-container">
+          <button type="button" onclick="respostaQuiz('Alcance')">
+            <!--button-->
+            <span class="text-button"><i><strong>Mais alcance</strong></i></span>
+          </button>
+          <button type="button" onclick="respostaQuiz('Conversão')">
+            <span class="text-button"><i><strong>Mais conversões</strong></i></span>
+          </button>
+          <button type="button" onclick="respostaQuiz('Reconhecimento')">
+            <span class="text-button"><i><strong>Fortalecer a marca</strong></i></span>
+          </button>
+        </div>
+        <div><p id="resultadoQuiz"></p></div>
       </div>
     </section>
 
