@@ -17,7 +17,7 @@ function menuShow () {
 }
 
 // Texto com digitação
-const texto = "Transformamos ideias em resultados digitais.";
+const texto = "Transformamos ideias em resultados digitais!";
 let index = 0;
 const destaque = document.querySelector('.destaque');
 

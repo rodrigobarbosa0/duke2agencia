@@ -11,41 +11,61 @@
     <link rel="stylesheet" href="styles/style-main-page.css" />
   </head>
   <body>
-    
     <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <h1></h1>
-                <a href="https://duke2.site">
-                  <img src="images/duke2transparent.png" alt="logo duke 2">
-                </a>
-            </div>
-            
-            <div class="nav-list" id="menu-toggle">
-                <ul>
-                    <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
-                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfólio</a></li>
-                    <li class="nav-item"><a href="#estatisticas" class="nav-link">Estatísticas</a></li>
-                    <li class="nav-item"><a href="#quiz" class="nav-link">Diagnóstico</a></li>
-                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
-                </ul>
-            </div>
-
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="images/menu_white_36dp.svg" alt=""></button>
-            </div>
-
-        </nav>
-
-        <div class="mobile-menu">
-            <ul>
-              <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
-              <li class="nav-item"><a href="#portfolio" class="nav-link">Portfólio</a></li>
-              <li class="nav-item"><a href="#estatisticas" class="nav-link">Estatísticas</a></li>
-              <li class="nav-item"><a href="#quiz" class="nav-link">Diagnóstico</a></li>
-              <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
-            </ul>
+      <nav class="nav-bar">
+        <div class="logo">
+          <h1></h1>
+          <a href="https://duke2.site">
+            <img src="images/duke2 (2).png" alt="logo duke 2" />
+          </a>
         </div>
+
+        <div class="nav-list" id="menu-toggle">
+          <ul>
+            <li class="nav-item">
+              <a href="#servicos" class="nav-link">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">Portfólio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#estatisticas" class="nav-link">Estatísticas</a>
+            </li>
+            <li class="nav-item">
+              <a href="#quiz" class="nav-link">Diagnóstico</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contato" class="nav-link">Contato</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img class="icon" src="images/menu_white_36dp.svg" alt="" />
+          </button>
+        </div>
+      </nav>
+
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item">
+            <a href="#servicos" class="nav-link">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfólio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#estatisticas" class="nav-link">Estatísticas</a>
+          </li>
+          <li class="nav-item">
+            <a href="#quiz" class="nav-link">Diagnóstico</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contato" class="nav-link">Contato</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <!---->
@@ -80,57 +100,34 @@
           <p>Projeto 1</p>
         </div>
         <div class="portfolio-item">
-          <img src="images/imagens-portfolio/final municipal  2021.png" alt="Projeto 2" />
+          <img
+            src="images/imagens-portfolio/final municipal  2021.png"
+            alt="Projeto 2"
+          />
           <p>Projeto 2</p>
         </div>
       </div>
     </section>
 
+    <!--estatisticas-->
     <section class="section" id="estatisticas">
       <h2>Impacto da Duke 2</h2>
       <div class="container stats">
         <div class="stat-box">
           <span class="stat" data-target="120">0</span>
-          <p>Clientes Atendidos</p>
+          <p><strong>clientes Atendidos</strong></p>
         </div>
         <div class="stat-box">
-          <span class="stat" data-target="350">0</span>
-          <p>Projetos Finalizados</p>
+          <span class="stat" data-target="250">0</span>
+          <p><strong>projetos Finalizados</strong></p>
         </div>
         <div class="stat-box">
-          <span class="stat" data-target="90">0</span>
-          <p>Sites Criados</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contato">
-      <h2>Entre em Contato</h2>
-      <div class="container">
-        <form id="form-contato">
-          <input type="text" placeholder="Seu nome" required />
-          <input type="email" placeholder="Seu e-mail" required />
-          <textarea placeholder="Sua mensagem" rows="5" required></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-    </section>
-
-    <!-- Estatísticas -->
-    <section class="section" id="estatisticas">
-      <h2>Nossos Números</h2>
-      <div class="container stats">
-        <div class="stat-box">
-          <span class="stat" data-target="120">0</span>
-          <p>Projetos entregues</p>
+          <span class="stat" data-target="30">0</span>
+          <p><strong>sites Criados</strong></p>
         </div>
         <div class="stat-box">
-          <span class="stat" data-target="45">0</span>
-          <p>Clientes ativos</p>
-        </div>
-        <div class="stat-box">
-          <span class="stat" data-target="300000">0</span>
-          <p>Reais investidos em tráfego</p>
+          <span class="stat" data-target="100000">0</span>
+          <p><strong>reais investidos em tráfego</strong></p>
         </div>
       </div>
     </section>
@@ -146,25 +143,6 @@
           Fortalecer a marca
         </button>
         <p id="resultadoQuiz"></p>
-      </div>
-    </section>
-
-    <!-- Estatísticas -->
-    <section class="section" id="estatisticas">
-      <h2>Nossos Números</h2>
-      <div class="container stats">
-        <div class="stat-box">
-          <span class="stat" data-target="120">0</span>
-          <p>Projetos entregues</p>
-        </div>
-        <div class="stat-box">
-          <span class="stat" data-target="35">0</span>
-          <p>Clientes ativos</p>
-        </div>
-        <div class="stat-box">
-          <span class="stat" data-target="100000">0</span>
-          <p>Reais investidos em tráfego</p>
-        </div>
       </div>
     </section>
 
@@ -185,13 +163,23 @@
           </p>
         </div>
         <div class="quem-somos-img">
-          <img src="sua-imagem-equipe.jpg" alt="Equipe Duke 2" />
+          <img src="images/duke2 (2).png" alt="Equipe Duke 2" />
         </div>
       </div>
     </section>
 
+    <!--contatos-->
     <section class="section" id="contato">
       <h2>Entre em contato:</h2>
+      <div class="formulario">
+        <form id="form-contato">
+          <input type="text" placeholder="Seu nome" required />
+          <input type="email" placeholder="Seu e-mail" required />
+          <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
       <div class="container contato">
         <div class="whatsapp">
           <a href="https://w.app/jkfkmb" target="_blank">
