@@ -3,6 +3,19 @@ document.getElementById('menu-toggle').addEventListener('click', function () {
   document.getElementById('menu-mobile').classList.toggle('show');
 });
 
+//menu responsivo
+
+function menuShow () {
+  let menuMobile = document.querySelector('.mobile-menu');
+  if (menuMobile.classList.contains('open')) {
+      menuMobile.classList.remove('open');
+      document.querySelector('.icon').src = "images/menu_white_36dp.svg";
+  } else {
+      menuMobile.classList.add('open');
+      document.querySelector('.icon').src = "images/close_white_36dp.svg";
+  }
+}
+
 // Texto com digitação
 const texto = "Transformamos ideias em resultados digitais.";
 let index = 0;

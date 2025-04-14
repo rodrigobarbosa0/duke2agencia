@@ -11,19 +11,44 @@
     <link rel="stylesheet" href="styles/style-main-page.css" />
   </head>
   <body>
+    
     <header>
-      <div class="container">
-        <div class="logo">Duke 2</div>
-        <div class="menu-mobile-toggle" id="menu-toggle">☰</div>
-        <nav class="menu-mobile" id="menu-mobile">
-          <a href="#servicos">Serviços</a>
-          <a href="#portfolio">Portfólio</a>
-          <a href="#estatisticas">Estatísticas</a>
-          <a href="#quiz">Diagnóstico</a>
-          <a href="#contato">Contato</a>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1></h1>
+                <a href="https://duke2.site">
+                  <img src="images/duke2transparent.png" alt="logo duke 2">
+                </a>
+            </div>
+            
+            <div class="nav-list" id="menu-toggle">
+                <ul>
+                    <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfólio</a></li>
+                    <li class="nav-item"><a href="#estatisticas" class="nav-link">Estatísticas</a></li>
+                    <li class="nav-item"><a href="#quiz" class="nav-link">Diagnóstico</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="images/menu_white_36dp.svg" alt=""></button>
+            </div>
+
         </nav>
-      </div>
+
+        <div class="mobile-menu">
+            <ul>
+              <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+              <li class="nav-item"><a href="#portfolio" class="nav-link">Portfólio</a></li>
+              <li class="nav-item"><a href="#estatisticas" class="nav-link">Estatísticas</a></li>
+              <li class="nav-item"><a href="#quiz" class="nav-link">Diagnóstico</a></li>
+              <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
     </header>
+
+    <!---->
 
     <section id="hero">
       <h1 class="destaque"></h1>
@@ -79,13 +104,6 @@
       </div>
     </section>
 
-    <section class="section" id="quiz">
-      <h2>Descubra o que sua empresa precisa agora</h2>
-      <div class="container">
-        <div id="quiz-container"></div>
-      </div>
-    </section>
-
     <section class="section" id="contato">
       <h2>Entre em Contato</h2>
       <div class="container">
@@ -119,9 +137,9 @@
 
     <!-- Quiz interativo -->
     <section class="section" id="quiz">
-      <h2>Teste de Diagnóstico</h2>
+      <h2>Descubra o que sua empresa precisa agora</h2>
       <div id="quiz-container">
-        <p><strong>O que sua marca mais precisa agora?</strong></p>
+        <p><strong>O que sua marca mais precisa?</strong></p>
         <button onclick="respostaQuiz('Alcance')">Mais alcance</button>
         <button onclick="respostaQuiz('Conversão')">Mais conversões</button>
         <button onclick="respostaQuiz('Reconhecimento')">
