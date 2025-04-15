@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(135deg, #c45901, #0003a5, #c45901);
+  background: linear-gradient(135deg, #f53b00, #0003a5, #f53b00);
   color: #fff;
   line-height: 1.6;
 }
@@ -22,12 +22,12 @@ body {
 }
 
 header {
-  background: linear-gradient(135deg, #ffffff, #ffffff);
+  background: linear-gradient(135deg, #f53b00, #0003a5);
   padding: 1px 10px;
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-bottom: #fff solid 1px;
+  border-bottom: #f53b00 solid 2px;
 }
 
 /*menu*/
@@ -36,8 +36,6 @@ nav ul {
   gap: 20px;
   list-style: none;
 }
-
-
 
 .nav-bar {
   display: flex;
@@ -67,9 +65,10 @@ nav ul {
 }
 
 .nav-link {
+  font-family: 'Sarala', sans-serif;
   text-decoration: none;
   font-size: 1.15rem;
-  color: #e75501;
+  color: #fff;
   font-weight: 400;
   font-weight: bold;
 }
@@ -103,7 +102,7 @@ nav ul {
 }
 
 .btn {
-  background: #00f5d4;
+  background: #f53b00;
   padding: 12px 30px;
   margin: 0 auto;
   color: #000;
@@ -129,7 +128,7 @@ nav ul {
   text-align: center;
   margin-bottom: 30px;
   font-size: 2.5rem;
-  color: #e75501;
+  color: #fff;
 }
 
 .servicos-grid {
@@ -139,7 +138,7 @@ nav ul {
 }
 
 .servico-card {
-  background: #e75501;
+  background: #f53b00;
   padding: 30px;
   border-radius: 16px;
   text-align: center;
@@ -181,16 +180,17 @@ nav ul {
 .stat {
   font-size: 3rem;
   font-weight: bold;
-  color: #00f5d4;
+  color: #f53b00;
   display: block;
 }
 
 /*button*/
 #quiz {
+  padding: 3%;
   font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   line-height: 1.4;
-  --darkGray: #333;
+  --darkGray: #292929;
   --litRed: rgb(2, 25, 158);
   --glowRed: rgb(37, 38, 143);
   background-color: transparent;
@@ -199,14 +199,13 @@ nav ul {
 
 #quiz-container-master {
   background: #292929;
-  padding: 20px;
   border-radius: 20px;
   color: #fff;
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
   font-size: 30px;
-
+  padding: 2%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -220,18 +219,19 @@ nav ul {
 }
 
 .quiz-container span {
-  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto,
+  font-family: "Sarala", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto,
   Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: 200;
   font-size: 20px;
   line-height: 1;
   color: #000;
+  margin: 0 auto;
 }
 
 .quiz-container button {
   font: inherit;
   color: currentColor;
-  background-color: #00f5d4;
+  background-color: #f53b00;
   border: .1em solid var(--darkGray);
 /*   border: .2em solid transparent; */
   border-radius: .5em;
@@ -289,24 +289,39 @@ nav ul {
 #resultadoQuiz {
   font-style: italic;
   font-weight: bold;
-  color: rgb(255, 255, 255);
+  color: #f53b00;
+}
+
+.formulario {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  border: none;
+}
+
+#form-contato {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0% 2%;
 }
 
 #form-contato input,
 #form-contato textarea {
-  width: 100%;
+  width: 90%;
   padding: 15px;
-  margin: 10px 0;
+  margin: 10px;
   border-radius: 10px;
   border: none;
   font-size: 1rem;
+  font-family: 'Sarala', sans-serif;
 }
 
 #form-contato button {
   padding: 15px 30px;
-  background: #00f5d4;
-  color: #000;
-  border: none;
+  background: #0003a5;
+  color: #fff;
+  border: 1px solid white;
   border-radius: 30px;
   font-weight: bold;
   cursor: pointer;
@@ -314,14 +329,7 @@ nav ul {
 }
 
 #form-contato button:hover {
-  transform: scale(1.05);
-}
-
-.formulario {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0px 20px 50px 20px;
-  border: none;
+  transform: scale(1.15);
 }
 
 .contato {
@@ -330,7 +338,6 @@ nav ul {
   justify-content: center;
   gap: 30px;
   padding: 3rem 0rem 0rem 0rem;
-  border-top: 0.4px solid #00f5d4;
 }
 
 .whatsapp, .instagram, .email, img{
@@ -350,7 +357,7 @@ footer {
 .cursor {
   width: 20px;
   height: 20px;
-  border: 2px solid #00f5d4;
+  border: 2px solid #f53b00;
   border-radius: 50%;
   position: absolute;
   pointer-events: none;
@@ -365,8 +372,8 @@ footer {
     padding: 1px;
   }
   .logo img{
-    max-width: 100px;
-    max-height: 120%;
+    max-width: 120px;
+    max-height: 140%;
   }
   .nav-bar {
     padding: .5rem;
@@ -399,6 +406,10 @@ footer {
   }
   .open {
       display: block;
+  }
+
+  body {
+    background: linear-gradient(100deg, #f53b00, #0003a5, #0003a5, #f53b00);
   }
 
   #hero {
