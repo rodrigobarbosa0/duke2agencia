@@ -318,7 +318,8 @@ nav ul {
 }
 
 #form-contato button {
-  padding: 15px 30px;
+  margin: 20px 0px 0px;
+  padding: 15px 200px;
   background: #0003a5;
   color: #fff;
   border: 1px solid white;
@@ -326,6 +327,7 @@ nav ul {
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+  font-family: "Sarala", sans-serif;
 }
 
 #form-contato button:hover {
@@ -442,5 +444,10 @@ footer {
     align-items: center;
   }
   /*end button*/
+
+  /*submit button*/
+  #form-contato button {
+    padding: 15px 80px;
+  }
 
 }
