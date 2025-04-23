@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -292,6 +293,122 @@ nav ul {
   color: #f53b00;
 }
 
+/*planos inicio*/
+.ver-planos {
+  padding: 12px;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.conteudo-planos {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  color: aliceblue;
+  justify-content: space-around;
+  gap: 15px;
+  padding: 10px 100px;
+  margin: 0 auto;
+}
+
+.conteudo-planos-caixa {
+  border-radius: 20px;
+  background: linear-gradient(68.15deg, #1c4162 16.62%, #0e1d39 85.61%);
+  padding: 10px 5px 80px 5px;
+  max-width: 350px;
+}
+
+.conteudo-planos-titulo {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #d7f9ff;
+  margin: 5px 0px 0px 5px;
+  padding: 5px 0px 0px 5px;
+}
+
+.conteudo-planos-paragrafo {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #70b7ae;
+  margin: 5px 0px 5px 5px;
+  padding: 5px 0px 10px 5px;
+}
+
+.conteudo-planos-valor-caixa {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 0px;
+  background-color: #021017;
+}
+
+.conteudo-planos-valor-preço {
+  margin: 0px;
+  padding: 15px 0px 15px 15px;
+  color: #f53b00;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.conteudo-planos-valor-mes {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: aliceblue;
+  margin: 0px;
+  padding: 30px 0px 15px 0px;
+}
+
+.conteudo-planos-botao {
+  display: block;
+  margin: 0 auto;
+  width: 220px;
+  height: 45px;
+  color: #04130f;
+  background-color: #f53b00;
+  border: none;
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  transition-duration: 250ms;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.conteudo-planos-botao:hover {
+  background-color: aliceblue;
+  border: 1px solid #2bfdbe;
+}
+
+.conteudo-planos-botao {
+  cursor: pointer;
+}
+
+.conteudo-planos-gatantir {
+  margin: 5px;
+  padding: 5px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.conteudo-planos-lista {
+  margin: 5px;
+  padding: 5px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: rem;
+}
+/*planos fim*/
+
 .quem-somos {
   display: flex;
   flex-direction: column;
@@ -461,6 +578,28 @@ footer {
     flex-direction: column;
     gap: 30px;
   }
+
+  /*preços/planos*/
+  .conteudo-planos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 400px;
+  }
+
+  .conteudo-planos-botao {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+  }
+  .conteudo-planos-botao strong {
+    padding: 2px;
+    font-size:120%;
+  }
+
+/*preços/planos-fim*/
 
   /*button*/
   .quiz-container {
