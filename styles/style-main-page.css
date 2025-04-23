@@ -292,6 +292,32 @@ nav ul {
   color: #f53b00;
 }
 
+.quem-somos {
+  display: flex;
+  flex-direction: column;
+}
+
+.quem-somos h2 {
+  margin-top: 30px;
+}
+
+  .quem-somos-texto {
+    text-align: center;
+  margin: 0px 10px 50px 10px;
+}
+
+.quem-somos-img {
+  margin: 0 auto;
+  background: linear-gradient(100deg, #e9d5cf, #777be0, #8989ee, #d3c8c4);
+  border-radius: 20px;
+  padding: -20px 0px;
+}
+
+.quem-somos-img img {
+  max-width: 250px;
+  max-height: 300%;
+}
+
 .formulario {
   max-width: 1200px;
   margin: 0 auto;
