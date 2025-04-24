@@ -39,7 +39,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-document.querySelectorAll('.servico-card, .portfolio-item').forEach(el => {
+document.querySelectorAll('.servico-card, .portfolio-item, .section').forEach(el => {
   el.classList.add('oculto');
   observer.observe(el);
 });
@@ -126,7 +126,7 @@ stats.forEach(stat => {
   }, 20);
 });
 
-// Parallax simples para elementos com data-parallax
+// Parallax simples para elementos com data-parallax (#fora de funcionamento#)
 window.addEventListener('scroll', () => {
   document.querySelectorAll('[data-parallax]').forEach(el => {
     const speed = parseFloat(el.getAttribute('data-parallax'));
