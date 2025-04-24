@@ -38,7 +38,7 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 });
-document.querySelectorAll('.servico-card, .portfolio-item, .section').forEach(el => {
+document.querySelectorAll('.servico-card, .portfolio-item, .section, h3').forEach(el => {
   el.classList.add('oculto');
   observer.observe(el);
 });
@@ -59,13 +59,7 @@ style.innerHTML = `
 `;
 document.head.appendChild(style);
 
-// Envio de formulário
-document.getElementById('form-contato').addEventListener('submit', function (e) {
-  e.preventDefault();
-  alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');
-});
-
-// Animação de contadores (estatísticas)
+// Animação de contadores (estatísticas) #consertar#
 document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll('.stat');
   const speed = 200;
@@ -131,4 +125,11 @@ window.addEventListener('scroll', () => {
     const speed = parseFloat(el.getAttribute('data-parallax'));
     el.style.transform = `translateY(${window.scrollY * speed}px)`;
   });
+});
+
+
+// Envio de formulário
+document.getElementById('form-contato').addEventListener('submit', function (e) {
+  e.preventDefault();
+  alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');
 });
