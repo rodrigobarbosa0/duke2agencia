@@ -38,7 +38,6 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 });
-
 document.querySelectorAll('.servico-card, .portfolio-item, .section').forEach(el => {
   el.classList.add('oculto');
   observer.observe(el);
@@ -49,7 +48,7 @@ const style = document.createElement('style');
 style.innerHTML = `
   .oculto {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(60px);
     transition: opacity 0.8s ease, transform 0.8s ease;
   }
 
@@ -101,14 +100,6 @@ document.addEventListener("DOMContentLoaded", () => {
   counters.forEach(counter => observer.observe(counter));
 });
 
-// Quiz interativo
-function respostaQuiz(resposta) {
-  const resultado = document.getElementById("resultadoQuiz");
-  if (resposta === "Alcance") resultado.textContent = "Vamos criar uma estratégia para crescer sua audiência!";
-  if (resposta === "Conversão") resultado.textContent = "Hora de otimizar seu funil de vendas!";
-  if (resposta === "Reconhecimento") resultado.textContent = "Vamos trabalhar seu branding com excelência!";
-}
-
 // Contador animado
 const stats = document.querySelectorAll(".stat");
 stats.forEach(stat => {
@@ -125,6 +116,14 @@ stats.forEach(stat => {
     }
   }, 20);
 });
+
+// Quiz interativo
+function respostaQuiz(resposta) {
+  const resultado = document.getElementById("resultadoQuiz");
+  if (resposta === "Alcance") resultado.textContent = "Vamos criar uma estratégia para crescer sua audiência!";
+  if (resposta === "Conversão") resultado.textContent = "Hora de otimizar seu funil de vendas!";
+  if (resposta === "Reconhecimento") resultado.textContent = "Vamos trabalhar seu branding com excelência!";
+}
 
 // Parallax simples para elementos com data-parallax (#fora de funcionamento#)
 window.addEventListener('scroll', () => {
