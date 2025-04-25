@@ -119,6 +119,16 @@ function respostaQuiz(resposta) {
   if (resposta === "Reconhecimento") resultado.textContent = "Vamos trabalhar seu branding com excelência!";
 }
 
+//afiliado
+function delayedRedirect() {
+  // Tempo em milissegundos (5000 = 5 segundos)
+  setTimeout(function () {
+    window.location.href = "seja-afiliado/index.html";
+  }, 5000);
+}
+//afiliado fim
+
+
 // Parallax simples para elementos com data-parallax (#fora de funcionamento#)
 window.addEventListener('scroll', () => {
   document.querySelectorAll('[data-parallax]').forEach(el => {
