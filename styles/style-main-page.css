@@ -311,10 +311,7 @@ nav ul {
 }
 
 @media (min-width:36em) {
-  #quiz-container-master {
-    
-  }
-
+  
   .quiz-container button:focus + button, .quiz-container button:hover + button {
     border-right-color: var(--darkGray);
     background-position: 0 0, 0 1em, 1em 0, 0 -1em;
