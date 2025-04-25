@@ -159,8 +159,9 @@ nav ul {
 }
 
 .portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
 }
 
@@ -169,6 +170,39 @@ nav ul {
   border-radius: 12px;
   max-width: 300px;
   max-height: 500%;
+}
+.portfolio-item p {
+  padding: 8px;
+  font-family: 'Sarala', sans-serif;
+  font-size: 80%;
+  text-align: center;
+}
+
+.portfolio-grid-clientes {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+
+.portfolio-item-clientes {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.portfolio-item-clientes img {
+  width: 90%;
+  border-radius: 160px;
+  max-width: 300px;
+  max-height: 500%;
+}
+
+.portfolio-item-clientes p {
+  padding: 8px;
+  font-family: 'Sarala', sans-serif;
+  font-size: 80%;
+  text-align: center;
 }
 
 .stats {
@@ -416,6 +450,11 @@ nav ul {
 }
 /*planos fim*/
 
+.seja-afiliado {
+  display: flex;
+  justify-content: center;
+}
+
 .quem-somos {
   display: flex;
   flex-direction: column;
@@ -586,6 +625,28 @@ footer {
     gap: 30px;
   }
 
+  /*clientes inicio*/
+  .portfolio-grid-clientes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .portfolio-item-clientes img {
+    width: 50%;
+    border-radius: 160px;
+    max-width: 300px;
+    max-height: 500%;
+  }
+  
+  .portfolio-item-clientes p {
+    padding: 8px 50px;
+    font-family: 'Sarala', sans-serif;
+    font-size: 120%;
+    text-align: center;
+  }
+  /*clientes fim*/
+  
+
   /*preços/planos*/
   .conteudo-planos {
     display: flex;
@@ -623,3 +684,5 @@ footer {
   }
 
 }
+
+/**/

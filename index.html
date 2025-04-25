@@ -9,7 +9,9 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="botao-seja-afiliado/botao-seja-afiliado.css">
     <link rel="stylesheet" href="styles/style-main-page.css" />
+  
   </head>
   <body>
     <header>
@@ -140,27 +142,39 @@
 
       </div>
 
-      <h3>Clientes</h3>
-      <div class="container portfolio-grid">
-        <div class="portfolio-item">
-          <img src="images/imagens-portfolio/logo.png" alt="Blog home and gardner(casa e jardim)" />
-          <p>money without secret community (snapchat)</p>
+      <h3>Parceiros:</h3>
+      <div class="container portfolio-grid-clientes">
+        <div class="portfolio-item-clientes">
+          <img src="images/imagens-portfolio/logo.png" alt="MWS" />
+          <p>money without secret community (snapchat e discord)</p>
         </div>
-        <div class="portfolio-item">
-          <img src="images/imagens-portfolio/logo (1).png" alt="Blog home and gardner(casa e jardim)" />
+        <div class="portfolio-item-clientes">
+          <img src="images/imagens-portfolio/logo (1).png" alt="Blue brand" />
           <p>Blue Brand Criative</p>
         </div>
-        <div class="portfolio-item">
-          <img src="images/imagens-portfolio/1.png" alt="Blog home and gardner(casa e jardim)" />
-          <p>3 M</p>
+        <div class="portfolio-item-clientes">
+          <img src="images/imagens-portfolio/Drago e Braga logo final.png" alt="Drago e Braga" />
+          <p>Drago e Braga</p>
         </div>
-        <div class="portfolio-item">
-          <img src="images/imagens-portfolio/picolereal.jpg " alt="Blog home and gardner(casa e jardim)" />
+        <div class="portfolio-item-clientes">
+          <img src="images/imagens-portfolio/picolereal.jpg " alt="Picole Real" />
           <p>Picole Real, filiais Rialma, Ceres e Jaraguá-GO</p>
         </div>
-        <div class="portfolio-item">
-          <img src="images/imagens-portfolio/creamy.jpg" alt="Blog home and gardner(casa e jardim)" />
-          <p>Picole Real, filiais itaguaru e Ceres-GO</p>
+        <div class="portfolio-item-clientes">
+          <img src="images/imagens-portfolio/creamy.jpg" alt="Creamy" />
+          <p>Creamy sorvetes, filiais itaguaru e Ceres-GO</p>
+        </div>
+        <div class="portfolio-item-clientes">
+          <img src="images/imagens-portfolio/gaspareto.jpg" alt="gaspareto espetaria" />
+          <p>Gaspareto Espetaria</p>
+        </div>
+        <div class="portfolio-item-clientes">
+          <img src="images/imagens-portfolio/arena boka loka.png" alt="Arena Boka Loka" />
+          <p>Arena Boka Loka</p>
+        </div>
+        <div class="portfolio-item-clientes">
+          <img src="images/imagens-portfolio/lu enxovais.png" alt="lu Enxovais" />
+          <p>Lu Enxovais</p>
         </div>
 
       </div>
@@ -374,7 +388,19 @@
     </section>
 
     <!--afiliado-->
-    <section class="section" id="afiliado"></section>
+    <section class="section" id="afiliado">
+      <label class="seja-afiliado">
+        <arcade-button style="--button-label: 'Seja um Afiliado'">
+          <input type="checkbox" id="input">
+          <arcade-button-text></arcade-button-text>
+          <ghost class="clyde"></ghost>
+          <pacman></pacman>
+          <dots></dots>
+          <dots-v></dots-v>
+          <walls></walls>
+        </arcade-button>
+      </label>  
+    </section>
 
     <section class="section" id="quemsomos">
       <div class="container quem-somos">

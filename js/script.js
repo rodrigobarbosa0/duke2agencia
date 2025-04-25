@@ -38,7 +38,7 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 });
-document.querySelectorAll('.servico-card, .portfolio-item, .section, h3').forEach(el => {
+document.querySelectorAll('.servico-card, .portfolio-item, .portfolio-item-clientes, .section, h3').forEach(el => {
   el.classList.add('oculto');
   observer.observe(el);
 });
