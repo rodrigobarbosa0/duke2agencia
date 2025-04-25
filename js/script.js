@@ -123,7 +123,7 @@ function respostaQuiz(resposta) {
 function delayedRedirect() {
   // Tempo em milissegundos (5000 = 5 segundos)
   setTimeout(function () {
-    window.location.href = "seja-afiliado/index.html";
+    window.location.href = "paginas/seja-afiliado/index.html";
   }, 5000);
 }
 //afiliado fim

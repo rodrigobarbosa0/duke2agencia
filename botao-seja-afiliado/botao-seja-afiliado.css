@@ -13,57 +13,6 @@
     --ghost-variant: #4A46BA;
   }
   
-  arcade-machine {
-    display: grid;
-    place-items: center;
-    border-bottom-left-radius: 10rem;
-    border-bottom-right-radius: 10rem;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(to bottom, #AB1740, #CB2057);
-    position: relative;
-  }
-  arcade-machine:before {
-    content: "";
-    background: linear-gradient(to bottom, #DC3362, #CB2057);
-    box-shadow: -0.0825rem 0.1rem 1rem 0.0625rem rgba(70, 8, 17, 0.4), -0.0625rem 0.1rem 0 rgba(131, 30, 61, 0.34), 0.0625rem 0.1rem 0 rgba(131, 30, 61, 0.34);
-    position: absolute;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    top: 0;
-    left: 2rem;
-    right: 2rem;
-    bottom: 1.5rem;
-  }
-  arcade-machine:after {
-    content: "";
-    background: linear-gradient(to bottom, #DC3362, #CB2057);
-    box-shadow: -0.0625rem 1rem 0.4rem #CB2057, 0.0625rem 1rem 0.4rem #CB2057;
-    position: absolute;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    top: 50%;
-    left: 2rem;
-    right: 2rem;
-    bottom: 1.5rem;
-  }
-  
-  arcade-machine-title {
-    display: flex;
-    aspect-ratio: 4.8/20;
-    height: min(20rem, 35vh);
-    border-bottom-left-radius: 10rem;
-    border-bottom-right-radius: 10rem;
-    position: absolute;
-    left: 4rem;
-    top: 0;
-    background: url(https://assets.codepen.io/907471/arcade-button-title.svg) center center no-repeat, linear-gradient(to bottom, #CD1E4F, #C0134B 20%);
-    background-size: contain;
-    padding: 0.5rem;
-    background-origin: content-box;
-    box-shadow: inset -0.0625rem 0 0 rgba(131, 30, 61, 0.34), inset 0.0625rem 0 0 rgba(131, 30, 61, 0.34), inset 0 -0.2rem 0.8rem rgba(0, 0, 0, 0.15);
-  }
-  
   arcade-button {
     z-index: 1111111;
     display: flex;

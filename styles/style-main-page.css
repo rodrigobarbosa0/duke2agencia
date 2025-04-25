@@ -450,6 +450,7 @@ nav ul {
 .seja-afiliado {
   display: flex;
   justify-content: center;
+  margin: 0% 37%;
 }
 
 .quem-somos {
@@ -674,6 +675,14 @@ footer {
     align-items: center;
   }
   /*end button*/
+
+  /*botao seja afiliado*/
+  .seja-afiliado {
+    display: flex;
+    justify-content: center;
+    margin: 0% 8%;
+  }
+  /*botao seja afiliado fim*/
 
   /*submit button*/
   #form-contato button {
